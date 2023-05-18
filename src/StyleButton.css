@@ -1,0 +1,24 @@
+#stylebutton {
+    color: #64ffda !important;
+    border: 2px solid #64ffda !important;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 14px !important;
+    margin-left: 30px !important;
+    position: relative;
+    background-color: #0a192f !important;
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+}
+
+#stylebutton:hover {
+    outline: none;
+    box-shadow: 3px 3px 0 0 #64ffda;
+    transform: translate(-4px, -4px);
+}
+
+#stylebutton a {
+    color: #64ffda;
+    text-decoration: none;
+}

@@ -1,0 +1,30 @@
+#socialleft {
+    position: fixed;
+    left: 50px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    height: 380px;
+}
+
+svg {
+    width: 25px;
+    height: 25px;
+}
+
+svg path {
+    fill: #8892b0;
+}
+
+#socialleft a:hover>svg path {
+    fill: #64ffda;
+}
+
+.stick {
+    background-color: #8892b0;
+    width: 2px;
+    height: 100px;
+}

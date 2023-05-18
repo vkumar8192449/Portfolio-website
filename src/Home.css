@@ -1,0 +1,42 @@
+#homemaindiv {
+    width: 100%;
+    height: 90vh;
+    padding: 0% 20%;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+
+#p1 {
+    color: #4cc3ad;
+    font-size: 22px;
+}
+
+#h1 {
+    color: #ccd6f6;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+#h2 {
+    margin-top: -80px;
+    color: #8892b0;
+    font-size: 68px;
+    font-weight: bold;
+}
+
+#p2 {
+    color: #8892b0;
+    margin-top: -40px;
+    width: 650px;
+    font-size: 18px;
+}
+
+#clg {
+    text-decoration: none;
+    color: #4cc3ad;
+}
+
+#clg:hover {
+    text-decoration: underline;
+}
