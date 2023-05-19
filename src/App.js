@@ -5,6 +5,7 @@ import SocialRight from './SocialRight.jsx';
 import Home from './Home.jsx';
 import About from './About.jsx';
 import Skills from './Skills.jsx';
+import Coding from './Coding.jsx';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Coding />
     </>
   );
 }

@@ -13,10 +13,13 @@ function Header() {
             <span>02.</span> Skills
           </button>
           <button>
-            <span>03.</span> Work
+            <span>03.</span> Coding
           </button>
           <button>
-            <span>04.</span> Contact
+            <span>04.</span> Work
+          </button>
+          <button>
+            <span>05.</span> Contact
           </button>
           <StyleButton
             content={

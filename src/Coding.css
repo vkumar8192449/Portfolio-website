@@ -1,0 +1,52 @@
+#codingcontainer {
+    width: 100%;
+    height: 90vh;
+    padding: 0% 20%;
+    padding-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: #ccd6f6;
+}
+
+#codingcontainer h1:nth-child(1) {
+    height: min-content;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lineskill {
+    width: 300px;
+    border: 1px solid #233554;
+}
+
+#codingplatforms {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.codeplat {
+    width: 75px;
+    height: 75px;
+}
+
+#codingplatforms div {
+    background-color: #112240;
+    width: 45%;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-right: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.shareicon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
