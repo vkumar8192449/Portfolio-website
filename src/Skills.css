@@ -1,0 +1,68 @@
+#skillscontainer {
+    width: 100%;
+    height: 90vh;
+    padding: 0% 20%;
+    padding-top: 150px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: #ccd6f6;
+    margin-bottom: 200px;
+}
+
+#skillscontainer h1:nth-child(1) {
+    height: min-content;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lineskill {
+    width: 300px;
+    border: 1px solid #233554;
+}
+
+#stack {
+    margin-top: 50px;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#stack section div {
+    cursor: pointer;
+    background: url('panta.png');
+    background-size: cover;
+    width: 115px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px 6px;
+    position: relative;
+    transition: all;
+    transition-duration: 1s;
+
+}
+
+#stack section div::before {
+    content: "";
+    background: url('panta.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 115px;
+    height: 100px;
+}
+
+#stack section div img {
+    width: 65px;
+    height: 65px;
+    filter: blur(5px);
+    transition: all;
+    transition-duration: 300ms;
+}

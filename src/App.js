@@ -2,7 +2,9 @@ import './App.css';
 import Header from './Header';
 import SocialLeft from './SocialLeft.jsx';
 import SocialRight from './SocialRight.jsx';
-import Home from './Home';
+import Home from './Home.jsx';
+import About from './About.jsx';
+import Skills from './Skills.jsx';
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
       <SocialLeft />
       <SocialRight />
       <Home />
+      <About />
+      <Skills />
     </>
   );
 }
