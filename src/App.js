@@ -6,6 +6,8 @@ import Home from './Home.jsx';
 import About from './About.jsx';
 import Skills from './Skills.jsx';
 import Coding from './Coding.jsx';
+import Work from './Work';
+import Contact from './Contact';
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
       <About />
       <Skills />
       <Coding />
+      <Work />
+      <Contact />
     </>
   );
 }

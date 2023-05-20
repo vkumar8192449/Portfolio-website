@@ -1,0 +1,31 @@
+#contactcontainer {
+    width: 100%;
+    height: 90vh;
+    padding: 0% 20%;
+    padding-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: #ccd6f6;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#contactcontainer p:nth-child(1) {
+    color: #4cc3ad;
+    font-size: 18px;
+}
+
+#contactcontainer h1 {
+    font-size: 50px !important;
+    letter-spacing: 2px;
+    margin-top: -15px;
+}
+
+#contactcontainer p:nth-child(3) {
+    font-size: 18px !important;
+    color: #8892b0;
+    width: 600px;
+    margin-bottom: 55px;
+}
