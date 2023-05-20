@@ -8,20 +8,22 @@ import Skills from './Skills.jsx';
 import Coding from './Coding.jsx';
 import Work from './Work';
 import Contact from './Contact';
+import { useState } from 'react';
 
 
 function App() {
+  const [links, setlinks] = useState([1, 0, 0, 0, 0, 0]);
   return (
     <>
-      <Header />
+      <Header links={links} setlinks={setlinks} />
       <SocialLeft />
       <SocialRight />
-      <Home />
-      <About />
-      <Skills />
-      <Coding />
-      <Work />
-      <Contact />
+      {(links[0] ? <Home /> : <></>)}
+      {(links[1] ? <About /> : <></>)}
+      {(links[2] ? <Skills /> : <></>)}
+      {(links[3] ? <Coding /> : <></>)}
+      {(links[4] ? <Work /> : <></>)}
+      {(links[5] ? <Contact /> : <></>)}
     </>
   );
 }
