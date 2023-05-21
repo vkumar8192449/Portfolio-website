@@ -16,8 +16,8 @@ function App() {
   return (
     <>
       <Header links={links} setlinks={setlinks} />
-      <SocialLeft />
-      <SocialRight />
+      <SocialLeft links={links} />
+      <SocialRight links={links} />
       {(links[0] ? <Home /> : <></>)}
       {(links[1] ? <About /> : <></>)}
       {(links[2] ? <Skills /> : <></>)}

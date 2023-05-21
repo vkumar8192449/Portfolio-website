@@ -41,26 +41,36 @@
     align-items: center;
     margin: 3px 6px;
     position: relative;
-    transition: all;
-    transition-duration: 1s;
-
-}
-
-#stack section div::before {
-    content: "";
-    background: url('panta.png');
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 115px;
-    height: 100px;
 }
 
 #stack section div img {
+    filter: blur(15px);
     width: 65px;
     height: 65px;
-    filter: blur(5px);
-    transition: all;
-    transition-duration: 300ms;
+    animation-name: blurunblur;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 4s;
+}
+
+@keyframes blurunblur {
+    0% {
+        filter: blur(15px);
+    }
+
+    25% {
+        filter: blur(0px);
+    }
+
+    50% {
+        filter: blur(0px);
+    }
+
+    75% {
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(15px);
+    }
 }

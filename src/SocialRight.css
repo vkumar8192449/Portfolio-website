@@ -16,6 +16,12 @@
     height: 100px;
 }
 
+.sticktilt {
+    background-color: #8892b0;
+    width: 2px;
+    height: 100px;
+}
+
 #socialright a {
     color: #8892b0;
     font-family: 'Poppins', sans-serif;
@@ -29,4 +35,77 @@
 
 #socialright a:hover {
     color: #64ffda;
+}
+
+@media (width<=800px) {
+    .socialrighttilt {
+        flex-direction: row !important;
+        right: 0 !important;
+        width: 400px !important;
+        bottom: -20px !important;
+    }
+
+    .socialrighttilt a {
+        transform: rotate(0deg) !important;
+    }
+
+    .stick {
+        background-color: #8892b0;
+        width: 100px !important;
+        height: 2px !important;
+    }
+}
+
+@media (width<=450px) {
+    .socialrighttilt {
+        width: 320px !important;
+    }
+
+    .stick {
+        width: 50px !important;
+    }
+}
+
+@media (width<=355px) {
+    .socialrighttilt {
+        width: 275px !important;
+    }
+
+    .stick {
+        width: 40px !important;
+    }
+
+    #socialright a {
+        font-size: 12px;
+    }
+}
+
+@media (width<=295px) {
+    .socialrighttilt {
+        width: 240px !important;
+    }
+
+    #socialright a {
+        font-size: 10px;
+    }
+}
+
+@media (width<=255px) {
+    .socialrighttilt {
+        width: 220px !important;
+    }
+
+    .stick {
+        width: 20px !important;
+    }
+}
+
+@media (width<=235px) {
+    .socialrighttilt {
+        width: 190px !important;
+    }
+
+    #socialright a {
+        font-size: 9px;
+    }
 }

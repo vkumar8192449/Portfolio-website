@@ -18,9 +18,6 @@ import bootstrap from "./Logos/bootstrap.png";
 import blockchain from "./Logos/blockchain.png";
 import photoshop from "./Logos/adobe-photoshop.png";
 function Skills() {
-  function clicked(e) {
-    e.style.filter = "blur(0px)";
-  }
   return (
     <>
       <div id="skillscontainer">
@@ -34,97 +31,92 @@ function Skills() {
         <div id="stack">
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={html} alt="" />
+              <img src={html} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={css} alt="" />
+              <img src={css} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img
-                onClick={(e) => clicked(e.target)}
-                style={{ transform: "scale(0.9)" }}
-                src={bootstrap}
-                alt=""
-              />
+              <img style={{ transform: "scale(0.9)" }} src={bootstrap} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={js} alt="" />
+              <img src={js} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={git} alt="" />
+              <img src={git} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={github} alt="" />
+              <img src={github} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={photoshop} alt="" />
+              <img src={photoshop} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={react} alt="" />
+              <img src={react} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={redux} alt="" />
+              <img src={redux} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={node} alt="" />
+              <img src={node} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={firebase} alt="" />
+              <img src={firebase} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={blockchain} alt="" />
+              <img src={blockchain} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={metamask} alt="" />
+              <img src={metamask} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={ethereum} alt="" />
+              <img src={ethereum} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={cplus} alt="" />
+              <img src={cplus} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={c} alt="" />
+              <img src={c} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={java} alt="" />
+              <img src={java} alt="" />
             </div>
           </section>
           <section>
             <div>
-              <img onClick={(e) => clicked(e.target)} src={wordpress} alt="" />
+              <img src={wordpress} alt="" />
             </div>
           </section>
         </div>
