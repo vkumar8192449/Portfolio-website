@@ -8,14 +8,23 @@ import Skills from './Skills.jsx';
 import Coding from './Coding.jsx';
 import Work from './Work';
 import Contact from './Contact';
-import { useState } from 'react';
-
+import { useState, useEffect } from 'react';
 
 function App() {
   const [links, setlinks] = useState([1, 0, 0, 0, 0, 0]);
+  const [menuopen, setmenu] = useState(false);
+
+  useEffect(() => {
+    if (menuopen === true) {
+      document.getElementById("newbuttonslinks").style.display = "flex";
+    } else {
+      document.getElementById("newbuttonslinks").style.display = "none";
+    }
+  }, [menuopen]);
+
   return (
     <>
-      <Header links={links} setlinks={setlinks} />
+      <Header links={links} setlinks={setlinks} setmenu={setmenu} menuopen={menuopen} />
       <SocialLeft links={links} />
       <SocialRight links={links} />
       {(links[0] ? <Home /> : <></>)}

@@ -38,6 +38,10 @@
 }
 
 @media (width<=800px) {
+    #socialright {
+        height: 160px;
+    }
+
     .socialrighttilt {
         flex-direction: row !important;
         right: 0 !important;

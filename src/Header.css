@@ -1,6 +1,6 @@
 #header {
     width: 100%;
-    height: 120px;
+    height: 15vh;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -9,14 +9,16 @@
 }
 
 #logo {
-    background: url('./logo.png');
-    background-repeat: no-repeat;
-    background-size: 130px;
-    width: 140px;
-    height: 100%;
+    width: 120px;
+    height: 70px;
     cursor: pointer;
     transition-property: all;
     transition-duration: 200ms;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
 }
 
 #logo:hover {
@@ -37,11 +39,118 @@
 }
 
 #buttonslinks button:hover {
-    color: #64ffda;
+    color: #64ffda !important;
 }
 
 #buttonslinks button span {
     color: #64ffda;
     font-weight: bold;
     font-size: 14px;
+}
+
+@media (width<=1100px) {
+    #buttonslinks button {
+        margin: 10px;
+    }
+}
+
+@media (width<=1040px) {
+    #buttonslinks button {
+        margin: 5px;
+    }
+}
+
+@media (width<=950px) {
+    #buttonslinks button {
+        margin: 2px;
+    }
+}
+
+#burger {
+    display: none;
+}
+
+#burger svg {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    fill: wheat;
+}
+
+@media (width<=850px) {
+    #buttonslinks {
+        display: none;
+    }
+
+    #burger {
+        display: block;
+        position: relative;
+    }
+}
+
+#newbuttonslinks {
+    border: 1px solid white;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    background-color: #0a192f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+    z-index: 1;
+}
+
+#newbuttonslinks button {
+    cursor: pointer;
+    color: #ccd6f6;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    margin: 15px;
+    font-family: 'Poppins', sans-serif;
+    transition-property: all;
+    transition-duration: 100ms;
+    letter-spacing: 0.5px;
+
+}
+
+#newbuttonslinks button:hover {
+    color: #64ffda !important;
+}
+
+#newbuttonslinks button span {
+    color: #64ffda;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media (width<420px) {
+    #header {
+        padding: 20px 4%;
+    }
+
+    #logo {
+        width: 100px;
+        height: 60px;
+    }
+
+    #burger svg {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (width<275px) {
+    #logo {
+        width: 80px;
+        height: 50px;
+    }
+
+    #burger svg {
+        width: 30px;
+        height: 30px;
+    }
 }
